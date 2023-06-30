@@ -1,0 +1,99 @@
+.landing-nav-hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+    
+    
+    /* background: linear-gradient(to right, #00095e 0%, #0c0c1f 100%); */
+    color: var(--color-white);
+    
+    width: 100%;
+}
+
+.hero-logo {
+    width: 20rem;
+    
+}
+.landing-nav-header-list-hero{
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+
+.landing-nav-header-list--item a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    color: var(--color-white);
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all .5s ease;
+    border-bottom: 5px solid transparent;
+}
+
+.landing-nav-header-list--item a:hover{
+    border-bottom: 5px solid var(--color-white);
+}
+
+.landing-nav-btn div{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.landing-nav-btn div a {
+    font-weight: bold;
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0.5rem;
+}
+
+.landing-nav-btn-pri{
+    border: 2px solid white;
+    margin: 1rem;
+    
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: all .5s ease;
+}
+.landing-nav-btn-sec {
+    margin: 1rem;
+    
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: all .5s ease;
+}
+.landing-nav-btn-pri:hover{
+    color: var(--color-secondary);
+}
+
+.landing-nav-btn-pri::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 101%;
+    width: 0;
+    background-color: var(--color-white);
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+.landing-nav-btn-pri:hover::after {
+    width: 101%;
+}
+
+.landing-nav-btn-sec{
+    transition: all .5s ease;
+}
+
+.landing-nav-btn-sec:hover{
+    color: var(--color-secondary);
+}
