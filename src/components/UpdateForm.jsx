@@ -2,7 +2,7 @@ import  { useEffect, useState, useContext } from 'react';
 import { Context } from './Context/userContext/Context';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
-
+import { apiDomain } from '../utils';
 import 'react-toastify/dist/ReactToastify.css';
 import './UpdateForm.css';
 
@@ -25,7 +25,7 @@ function UpdateForm({ setShowEditForm, user_ }) {
             const body = { userName, userEmail, userPhone };
             console.log(body)
             const response = await fetch(
-                `http://localhost:8081/user/${user.id}`,
+                `${apiDomain}user/${user.id}`,
                 {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },

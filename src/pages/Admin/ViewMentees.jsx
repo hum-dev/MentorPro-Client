@@ -1,6 +1,7 @@
 import  { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { apiDomain } from '../../utils';
 // import { set } from 'react-hook-form';
 // import axios from 'axios';
 import './View.css'
@@ -12,7 +13,7 @@ function ViewMentees() {
         // Fetch user data from the server
         const fetchMentees = async () => {
           try {
-            const response = await fetch('http://localhost:8081/mentees',{
+            const response = await fetch(`${apiDomain}mentees`,{
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -32,7 +33,7 @@ console.log(allMentees);
     
       const handleDelete = async (mentee_id) => {
         try {
-            const response = await fetch(`http://localhost:8081/mentor/${mentee_id}`,{
+            const response = await fetch(`${apiDomain}mentor/${mentee_id}`,{
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

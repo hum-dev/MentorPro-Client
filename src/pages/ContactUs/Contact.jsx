@@ -3,6 +3,7 @@ import './Contact.css'
 import {  useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { apiDomain } from '../../utils';
 // import Axios from 'axios'
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -47,7 +48,7 @@ function Contact() {
   });
 
   const sendDataToServer = async(data) => {
-    const response = await fetch("http://localhost:8081/message", {
+    const response = await fetch(`${apiDomain}message`, {
       method: "POST",
       body: JSON.stringify(data),
       headers: {

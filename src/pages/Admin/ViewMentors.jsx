@@ -1,6 +1,7 @@
 import  { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { apiDomain } from '../../utils';
 // import { set } from 'react-hook-form';
 // import axios from 'axios';
 import './View.css'
@@ -10,7 +11,7 @@ function ViewMentors() {
 
     const fetchMentors = async () => {
       try {
-        const response = await fetch('http://localhost:8081/mentors',{
+        const response = await fetch(`${apiDomain}mentors`,{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,7 +35,7 @@ console.log(allMentors);
     
 const handleDelete = async (mentor_id) => {
     try {
-        const response = await fetch(`http://localhost:8081/mentor/${mentor_id}`,{
+        const response = await fetch(`${apiDomain}mentor/${mentor_id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

@@ -2,6 +2,7 @@ import './SignUp.css';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import {apiDomain} from '../../../utils'  
 import { Link, useNavigate } from 'react-router-dom';
 // import Axios from 'axios';
 import { toast } from 'react-toastify';
@@ -40,7 +41,7 @@ function SignUp() {
   });
 
   const SendDataToServer = async (data) => {
-    const response = await fetch("http://localhost:8081/auth/register", {
+    const response = await fetch(`${apiDomain}auth/register`, {
       method: "POST",
       body: JSON.stringify(data),
       headers: {

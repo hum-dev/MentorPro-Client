@@ -3,6 +3,7 @@ import { useForm} from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import Axios from 'axios'
+import {apiDomain} from '../../../utils'
 import { useContext } from 'react'
 import { Context } from '../../Context/userContext/Context'
 
@@ -34,7 +35,7 @@ function Login() {
     });
 
     const SendDataToServer = async (data) => {
-      Axios.post("http://localhost:8081/auth/login", data)
+      Axios.post(`${apiDomain}auth/login`, data)
       .then(({data}) => {
         if(data.token) {
           dispatch({type: "LOGIN_SUCCESS", payload: data})

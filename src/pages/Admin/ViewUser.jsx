@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import axios from 'axios';
 
 import './View.css'
+import { apiDomain } from '../../utils';
 function ViewUser() {
   const [users, setUsers] = useState([]);
 
@@ -17,7 +18,7 @@ function ViewUser() {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch("http://localhost:8081/users", {
+      const response = await fetch(`${apiDomain}users`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +37,7 @@ function ViewUser() {
   // }, []);
   const handleDelete = async (user_id) => {
     try {
-      const response = await fetch(`http://localhost:8081/user/${user_id}`, {
+      const response = await fetch(`${apiDomain}user/${user_id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
