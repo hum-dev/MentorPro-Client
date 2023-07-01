@@ -1,4 +1,4 @@
-import './Profile.css'
+import './profile.css'
 import pic from '../../../assets/images/OIP.jpeg'
 import { useContext } from 'react'
 import { Context } from '../../Context/userContext/Context'
