@@ -19,7 +19,6 @@ export const LeftContainer = styled.div`
 flex : 20%;
 display : flex;
 height : 110%;
-padding-right : 50px;
 
 ` ;
 
@@ -28,7 +27,7 @@ flex : 70%;
 display : flex;
 justify-content : space-between;
 align-items : center;
-padding-right : 5%;
+
 
 ` ;
 
