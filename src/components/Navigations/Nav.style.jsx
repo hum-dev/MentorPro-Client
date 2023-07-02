@@ -70,11 +70,52 @@ export const NavbarLinkRight = styled(Link)`
 display : flex;
 align-items : center;
 text-decoration : none;
-margin-left : 4rem;
+font-size : 1rem;
 font-size : 1.8rem;
+
+& .profile {
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+& .profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--color-white);
+}
 
 & .nav-link {
     padding : .7rem;
+    border: 2px solid white;
+    margin: 1rem;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: all .5s ease;
+}
+& .nav-link:hover {
+    color: var(--color-secondary);
+}
+
+& .nav-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 0;
+    background-color: var(--color-white);
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+& .nav-link:hover::after {
+    height: 101%;
 }
 
 `;
