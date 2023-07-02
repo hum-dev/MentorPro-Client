@@ -80,16 +80,16 @@ font-size : 1.8rem;
     height: 70px;
 }
 
-& .profile {
-    width: 100%;
-    height: 100%;
+& .profile{
+    /* width: 100%; */
+    /* height: 100%; */
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid var(--color-white);
 }
 
 & .nav-link {
-    padding : .7rem;
+    padding : .5rem;
     border: 2px solid white;
     margin: 1rem;
     border-radius: 50px;
