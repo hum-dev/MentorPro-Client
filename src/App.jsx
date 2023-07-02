@@ -16,11 +16,12 @@ import NotFound from './pages/NotFound/NotFound'
 import Mentor from './components/Mentor/MentorsData'
 import Mentee from './components/Mentee/MenteeData'
 import Profile from './pages/Profile/Profile'
-import NavBar from './components/Navigations/NavBar'
+// import NavBar from './components/Navigations/NavBar'
 import Admin from './pages/Admin/Admin'
 import ViewUser from './pages/Admin/ViewUser'
 import ViewMentors from './pages/Admin/ViewMentors'
 import ViewMentees from './pages/Admin/ViewMentees'
+import Nav from './components/Navigations/Nav'
 
 
 
@@ -34,7 +35,7 @@ function App() {
     <BrowserRouter>
       <>
       {
-        user ? <NavBar/> : <NavHero/>
+        user ? <Nav/> : <NavHero/>
       }
       
       
