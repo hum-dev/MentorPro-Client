@@ -17,17 +17,17 @@ flex-direction : column;
 
 `;
 export const LeftContainer = styled.div`
-flex : 10%;
+flex : 5%;
 display : flex;
 height : 110%;
-background : #fff;
+/* background : #fff; */
 
 ` ;
 
 export const RightContainer = styled.div`
-flex : 90%;
+flex : 95%;
 display : flex;
-justify-content : space-between;
+/* justify-content : space-between; */
 align-items : center;
 
 
@@ -51,7 +51,7 @@ export const NavbarLink = styled(Link)`
 text-decoration : none;
 font-size : 2rem;
 color : #000;
-margin-right : 10px;
+margin-right : 5px;
 display : flex;
 align-items : center;
 font-weight : 500;
@@ -70,7 +70,7 @@ export const NavbarLinkRight = styled(Link)`
 display : flex;
 align-items : center;
 text-decoration : none;
-margin-left : 10rem;
+margin-left : 4rem;
 font-size : 1.8rem;
 
 & .nav-link {
