@@ -8,6 +8,7 @@ height : ${(props )=> (props.extendNavbar ? '100vh' : '80px')};
 margin-top : 5rem;
 display : flex;
 /* justify-content : space-between; */
+margin-right : 0;
 flex-direction : column;
 
 @media screen and (min-width : 700px){
@@ -16,14 +17,15 @@ flex-direction : column;
 
 `;
 export const LeftContainer = styled.div`
-flex : 20%;
+flex : 10%;
 display : flex;
 height : 110%;
+background : #fff;
 
 ` ;
 
 export const RightContainer = styled.div`
-flex : 70%;
+flex : 90%;
 display : flex;
 justify-content : space-between;
 align-items : center;
