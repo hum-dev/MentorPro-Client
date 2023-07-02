@@ -24,7 +24,7 @@ padding-right : 50px;
 ` ;
 
 export const RightContainer = styled.div`
-flex : 80%;
+flex : 70%;
 display : flex;
 justify-content : space-between;
 align-items : center;
@@ -56,8 +56,10 @@ align-items : center;
 font-weight : 500;
 
 transition : all 0.3s ease-in-out;
+&:hover{
+    border-bottom: 2px solid var(--color-white);
 
-
+}
 @media screen and (max-width : 700px){
         display : none;
     }
@@ -67,7 +69,7 @@ export const NavbarLinkRight = styled(Link)`
 display : flex;
 align-items : center;
 text-decoration : none;
-margin-left : 15rem;
+margin-left : 10rem;
 font-size : 1.8rem;
 
 & .nav-link {
