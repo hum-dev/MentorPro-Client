@@ -77,7 +77,7 @@ function Login() {
               type="text"
               name="username"
               id="username"
-              placeholder="Enter Username"
+              placeholder="enter username"
               {...register("username")}
             />
             {/* <p className='err'>{errors.username?.message}</p> */}
@@ -89,7 +89,7 @@ function Login() {
               type="password"
               name="password"
               id="password"
-              placeholder="Enter Password"
+              placeholder="enter password"
               {...register("password")}
             />
             {/* <p className='err'>{errors.password?.message}</p> */}
@@ -139,8 +139,13 @@ function Login() {
         <p className="signup">
           Dont have an account?
           <Link to='/Signup' className="log">Sign up</Link>
-          
         </p>
+        <div>
+          <h3>username</h3>
+          <p>humphrey</p>
+          <h3>password</h3>
+          <p> @Fsociety1!</p>
+        </div>
       </div>
     </>
   );

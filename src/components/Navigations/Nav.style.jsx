@@ -61,7 +61,8 @@ transition : all 0.3s ease-in-out;
     border-bottom: 2px solid var(--color-white);
 
 }
-@media screen and (max-width : 700px){
+
+@media  (max-width : 700px){
         display : none;
     }
 `;
