@@ -20,7 +20,7 @@ function Home() {
         Unlock your potential with MentorPro for tech excellence
         </h2>
         <p className="landing-page-left--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora et sed quas aspernatur, perspiciatis repudiandae quasi molestiae explicabo ducimus?
+        Transform your career with personalized guidance. Join MentorPro and achieve tech mastery today!
         </p>
         
        
